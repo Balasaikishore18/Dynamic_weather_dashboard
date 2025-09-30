@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Weather Dashboard - Documentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f9fafb;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(90deg, #3b82f6, #06b6d4);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      margin: 5px 10px;
+      padding: 8px 14px;
+      text-decoration: none;
+      background: #3b82f6;
+      color: white;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #2563eb;
+    }
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2563eb;
+      margin-top: 30px;
+    }
+    pre {
+      background: #f3f4f6;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: monospace;
+      color: #ef4444;
+    }
+    .screenshot {
+      margin: 20px 0;
+      text-align: center;
+    }
+    .screenshot img {
+      max-width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    footer {
+      margin-top: 40px;
+      background: #f3f4f6;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌦️ Dynamic Weather Dashboard</h1>
+    <p>Documentation & Usage Guide</p>
+  </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#installation">Installation</a>
+    <a href="#usage">Usage</a>
+    <a href="#structure">Project Structure</a>
+    <a href="#screenshots">Screenshots</a>
+    <a href="#api">API Reference</a>
+    <a href="#contribute">Contribute</a>
+  </nav>
+
+  <main>
+    <section id="overview">
+      <h2>📌 Overview</h2>
+      <p>
+        The Dynamic Weather Dashboard is a web application built using
+        <strong>JavaScript</strong>, <strong>OpenWeatherMap API</strong>, and
+        <strong>Geolocation API</strong>. It provides real-time current weather and a
+        5-day forecast for any city worldwide or based on the user’s current location.
+      </p>
+    </section>
+
+    <section id="installation">
+      <h2>⚙️ Installation</h2>
+      <ol>
+        <li>Clone this repository:
+          <pre><code>git clone https://github.com/your-username/weather-dashboard.git</code></pre>
+        </li>
+        <li>Navigate into the project folder:
+          <pre><code>cd weather-dashboard</code></pre>
+        </li>
+        <li>Open <code>index.html</code> in your browser, or use a local server (recommended).</li>
+        <li>Replace the API key placeholder in <code>script.js</code>:
+          <pre><code>const API_KEY = 'YOUR_OPENWEATHERMAP_API_KEY';</code></pre>
+        </li>
+      </ol>
+    </section>
+
+    <section id="usage">
+      <h2>🎮 Usage</h2>
+      <ul>
+        <li>Enter a <strong>city name</strong> and click <em>Search</em>.</li>
+        <li>Or click <em>Current Location</em> to fetch weather using geolocation.</li>
+        <li>Dashboard displays:
+          <ul>
+            <li>🌡️ Current temperature</li>
+            <li>🌫️ Feels like temperature</li>
+            <li>💧 Humidity</li>
+            <li>🌬️ Wind speed</li>
+            <li>📉 Min / Max temperatures</li>
+            <li>📊 5-day forecast</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="structure">
+      <h2>📂 Project Structure</h2>
+      <pre><code>weather-dashboard/
+│── index.html           # Main HTML file
+│── style.css            # Stylesheet
+│── script.js            # Core JavaScript logic
+│── README.md            # Documentation
+│── docs/                # Docs for GitHub Pages
+</code></pre>
+    </section>
+
+    <section id="screenshots">
+      <h2>🖼️ Screenshots</h2>
+      <div class="screenshot">
+        <p>Main Weather Dashboard</p>
+        <img src="screenshot-dashboard.png" alt="Weather Dashboard Screenshot">
+      </div>
+      <div class="screenshot">
+        <p>5-Day Forecast Section</p>
+        <img src="screenshot-forecast.png" alt="Forecast Screenshot">
+      </div>
+    </section>
+
+    <section id="api">
+      <h2>📚 API Reference</h2>
+      <ul>
+        <li><a href="https://openweathermap.org/current" target="_blank">Current Weather API</a></li>
+        <li><a href="https://openweathermap.org/forecast5" target="_blank">5-Day Forecast API</a></li>
+        <li><a href="https://openweathermap.org/weather-conditions" target="_blank">Weather Icons</a></li>
+      </ul>
+    </section>
+
+    <section id="contribute">
+      <h2>🤝 Contributing</h2>
+      <p>
+        Contributions, issues, and feature requests are welcome!<br>
+        Fork the repo, create a branch, and submit a PR 🚀.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Dynamic Weather Dashboard | Licensed under MIT</p>
+  </footer>
+</body>
+</html>
